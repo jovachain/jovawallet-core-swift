@@ -4,13 +4,13 @@ SwiftPM distribution of the [jovawallet-core](https://github.com/jovachain/jovaw
 
 ## Install
 
-**Xcode:** File → Add Package Dependencies → enter `https://github.com/jovachain/jovawallet-core-swift` → set version rule to `from: "0.3.0"`.
+**Xcode:** File → Add Package Dependencies → enter `https://github.com/jovachain/jovawallet-core-swift` → set version rule to `from: "0.3.1"`.
 
 **Package.swift:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/jovachain/jovawallet-core-swift", from: "0.3.0"),
+    .package(url: "https://github.com/jovachain/jovawallet-core-swift", from: "0.3.1"),
 ],
 targets: [
     .target(
@@ -53,7 +53,12 @@ let signed = try wallet.signTx(
 print(signed.signedHex)
 ```
 
-## Supported chains at v0.3.0
+## v0.3.1 fixes
+
+- iOS + Android sample apps now compile cleanly against the published binding
+- XCFramework macOS slices pinned to deployment target 11.0 — downstream SPM consumers no longer see linker warnings about newer macOS version
+
+## Supported chains at v0.3.1
 
 - Bitcoin — BIP-84 native SegWit (P2WPKH), PSBT signing, BIP-322 message signing
 - EVM family — Ethereum, Polygon, BSC, Arbitrum, Optimism, Base, customEvm (EIP-1559)
@@ -62,7 +67,7 @@ print(signed.signedHex)
 
 ## Versioning
 
-Satellite repo tags mirror SDK tags one-for-one. `v0.3.0` here corresponds to `v0.3.0` of `jovawallet-core`.
+Satellite repo tags mirror SDK tags one-for-one. `v0.3.1` here corresponds to `v0.3.1` of `jovawallet-core`.
 
 ## License
 
