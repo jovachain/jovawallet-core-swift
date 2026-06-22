@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "JovaCoreFFI",
-            url: "https://github.com/jovachain/jovawallet-core-swift/releases/download/v0.3.1/JovaCoreFFI.xcframework.zip",
-            checksum: "6fc196dcffe5ef502c670d3cadfc2507a38fa2986d966a933c40be81cab0a5f2"
+            url: "https://github.com/jovachain/jovawallet-core-swift/releases/download/v0.4.0/JovaCoreFFI.xcframework.zip",
+            checksum: "b52307642cce9f33991964902e4aebe218b9c76862fe137cc85745032fc61770"
         ),
         .target(
             name: "JovaCore",

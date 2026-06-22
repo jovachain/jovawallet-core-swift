@@ -4,13 +4,13 @@ SwiftPM distribution of the [jovawallet-core](https://github.com/jovachain/jovaw
 
 ## Install
 
-**Xcode:** File → Add Package Dependencies → enter `https://github.com/jovachain/jovawallet-core-swift` → set version rule to `from: "0.3.1"`.
+**Xcode:** File → Add Package Dependencies → enter `https://github.com/jovachain/jovawallet-core-swift` → set version rule to `from: "0.4.0"`.
 
 **Package.swift:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/jovachain/jovawallet-core-swift", from: "0.3.1"),
+    .package(url: "https://github.com/jovachain/jovawallet-core-swift", from: "0.4.0"),
 ],
 targets: [
     .target(
